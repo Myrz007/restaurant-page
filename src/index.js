@@ -7,6 +7,8 @@ const menus = document.querySelector('#menus');
 const contact = document.querySelector('#contact');
 const content = document.querySelector('#content');
 
+content.appendChild(homeComponent());
+
 home.addEventListener('click', () => {
     clearContent();
     content.appendChild(homeComponent());
