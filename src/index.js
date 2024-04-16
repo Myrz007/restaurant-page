@@ -7,6 +7,21 @@ const menus = document.querySelector('#menus');
 const contact = document.querySelector('#contact');
 const content = document.querySelector('#content');
 
+home.addEventListener('click', () => {
+    clearContent();
+    content.appendChild(homeComponent());
+});
+
+menus.addEventListener('click', () => {
+    clearContent();
+    content.appendChild(menusComponent());
+});
+
+contact.addEventListener('click', () => {
+    clearContent();
+    content.appendChild(contactComponent());
+});
+
 function clearContent() {
     content.innerHTML = '';
 }
