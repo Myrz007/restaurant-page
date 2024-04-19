@@ -29,13 +29,17 @@ class Menu {
     }
 }
 
+const burgerMenu = new Menu('Burger Menu', 'Fries / Salad', 'Burger', 'Brownie / Cookie / Smoothie', '$20').createComponent;
+const pizzaMenu  = new Menu('Pizza Menu', 'Fries / Salad', 'Pizza', 'Brownie / Cookie / Smoothie', '$25').createComponent;
+const tacosMenu  = new Menu('Tacos Menu', 'Fries / Salad', 'Tacos', 'Brownie / Cookie / Smoothie', '$15').createComponent;
+
 export default function menusComponent() {
     const mainElement = document.createElement('div');
     const title       = document.createElement('h1');
 
     title.innerHTML = 'Our Menus';
 
-    mainElement.append(title);
+    mainElement.append(title, burgerMenu, pizzaMenu, tacosMenu);
 
     return mainElement;
 }
