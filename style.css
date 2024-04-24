@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Holtwood One";
+    src: url("./fonts/HoltwoodOneSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Salsa";
+    src: url("./fonts/Salsa-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 6% 20% 0 20%;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-image: url("./images/wooden_floor.jpg");
+}
+
+nav {
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    
+    font: bold 100% "Salsa";
+}
+
+h1,
+h3 {
+    font-family: "Holtwood One";    
+}
+
+p,
+li {
+    font-family: "Salsa";
+    font-weight: bold;
+}
+
+img {
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#home-content,
+#menus-content,
+#contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
