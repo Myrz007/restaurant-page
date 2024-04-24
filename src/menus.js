@@ -39,6 +39,7 @@ export default function menusComponent() {
 
     title.innerHTML = 'Our Menus';
 
+    mainElement.setAttribute('id', 'menus-content');
     mainElement.append(title, burgerMenu, pizzaMenu, tacosMenu);
 
     return mainElement;
