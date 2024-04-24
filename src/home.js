@@ -8,6 +8,7 @@ export default function homeComponent() {
     description.innerHTML = 'Welcome to Barney\'s Tavern! All we serve is elaborated with fresh ingredients collected from our trustworthy local partners. Just come, relax and enjoy a great time!';
     image.src = './images/tavern.jpg';
     
+    mainElement.setAttribute('id', 'home-content');
     mainElement.append(title, description, image);
 
     return mainElement;
