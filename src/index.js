@@ -1,6 +1,6 @@
-import homeComponent from "./modules/home.js";
-import menusComponent from "./modules/menus.js";
-import contactComponent from "./modules/contact.js";
+import homeComponent from './modules/home.js';
+import menusComponent from './modules/menus.js';
+import contactComponent from './modules/contact.js';
 
 const home = document.querySelector('#home');
 const menus = document.querySelector('#menus');
